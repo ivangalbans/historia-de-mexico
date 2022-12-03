@@ -9,7 +9,7 @@ var q_a =
         ["época prehispánica que tuvo más dessarrollo en su cultura", "Pos clásico"],
         ["Qué fue Tenochtitlán ?", "Capital de los Mexicas"],
         ["Cuándo se fundó Tenochtitlán ?", "1325"],
-        ["Anho en que cayó México Tenochtitlán", "1521"],
+        ["Año en que cayó México Tenochtitlán", "1521"],
         ["Edificio o museo que alberga el centro de Tenochtitlán", "Templo Mayor"],
         ["A qué se le conoce como el hombre de Tepexpan", "Es un esqueleto precolombino"],
         ["Con qué comercializaban en la época prehispánica ? o moneda de intercambio principal de los pueblos mesoamericanos", "Cacao"],
