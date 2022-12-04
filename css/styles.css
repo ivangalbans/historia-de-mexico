@@ -1,7 +1,13 @@
-#card {
+#card,
+svg {
     cursor: pointer;
 }
 
 p {
     font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+svg {
+    width: 20%;
+    height: auto;
 }

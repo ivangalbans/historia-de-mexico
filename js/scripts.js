@@ -7,10 +7,10 @@ var q_a =
         ["Periodo en el que más se desarrolló la cultura Olmeca", "Preclásico"],
         ["El mayor desarrollo de la cultura mesoamericana se dio durante el período", "Clásico"],
         ["época prehispánica que tuvo más dessarrollo en su cultura", "Pos clásico"],
-        ["Qué fue Tenochtitlán ?", "Capital de los Mexicas"],
-        ["Cuándo se fundó Tenochtitlán ?", "1325"],
-        ["Anho en que cayó México Tenochtitlán", "1521"],
-        ["Edificio o museo que alberga el centro de Tenochtitlán", "Templo Mayor"],
+        ["Qué fue Tenochtitlan ?", "Capital de los Mexicas"],
+        ["Cuándo se fundó Tenochtitlan ?", "1325"],
+        ["Anho en que cayó México Tenochtitlan", "1521"],
+        ["Edificio o museo que alberga el centro de Tenochtitlan", "Templo Mayor"],
         ["A qué se le conoce como el hombre de Tepexpan", "Es un esqueleto precolombino"],
         ["Con qué comercializaban en la época prehispánica ? o moneda de intercambio principal de los pueblos mesoamericanos", "Cacao"],
         ["La base alimenticia de los pueblos mesoamericanos fue", "El maíz"],
@@ -66,12 +66,12 @@ var q_a =
         ["Anfibio representando junto al Dios Xólotl", "Ajolote"],
         ["Lugar mítico de donde salieron los Mexicas o Aztecas", "Aztlán"],
         ["Qué significa Aztlán ?", "Garza, lugar de las garzas"],
-        ["Terreno contruido sobre las lagunas del Valle de México que sirvió de base al sistema productivo del altiplano central. En la actualidad, puede encontrarse en Xochimilco", ""],
+        ["Terreno contruido sobre las lagunas del Valle de México que sirvió de base al sistema productivo del altiplano central. En la actualidad, puede encontrarse en Xochimilco", "Chinampa"],
         ["Cuáles eran las escuelas donde asistían los indiios prehispánicos e hijos de los nobles mexicas", "Calmecac (nobles), Telpochcali (plebeyos o jóvenes del pueblo)"],
         ["Por qué actividad fueron conocidos los aztecas ?", "Guerreros, agricultura, comercio, cultos religiosos, sacrificios humanos"],
         ["Qué significa Cuauhtémoc", "Aguila que desciende, o águila que se posa"],
         ["Significado de la palabra altepetl con la que los tlatoanis denominaban a sus ciudades", "Cerro de agua"],
-        ["Quiénes integraron la triple alianza", "Tenochtitlán, Texcoco, Tlacopán"],
+        ["Quiénes integraron la triple alianza", "Tenochtitlan, Tetzcoco, Tlacopan"],
         ["Etnia de Guanajato", "Chichimeca Jonaz"],
         ["Cultura índigena que persiste en el norte del país", "Tarahumara"],
         ["De qué parte del país son los Tarahumaras", "Chihuahua"],
@@ -80,28 +80,52 @@ var q_a =
         ["Comunidad indígena que habita actualmente en Tabasco", "Mayas-Chontales"]
     ];
 
-var n = q_a.length;
-var i = 0;
+var N = q_a.length;
 
+function shuffle(array) {
+    let i = array.length, j;
+
+    while (i != 0) {
+        j = Math.floor(Math.random() * i);
+        i--;
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+
+    return array;
+}
+
+var indexes = shuffle(Array.from(Array(N).keys()));
+var index = -1;
 
 function answer() {
     var text = document.getElementById("card-text");
-    text.innerText = q_a[i][1];
+    text.innerText = q_a[indexes[index]][1];
 
     var card = document.getElementById("card");
     card.classList.add("bg-warning");
-    card.classList.remove(["bg-info"]);
+    card.classList.remove("bg-info");
 }
 
+function previous() {
+    index = (index - 1 + N) % N;
+    var text = document.getElementById("card-text");
+    text.innerText = q_a[indexes[index]][0];
+
+    var card = document.getElementById("card");
+    card.classList.add("bg-info");
+    card.classList.remove("bg-warning");
+
+}
 
 function next() {
-    i = Math.floor((Math.random() * n) + 1) - 1;
+    index = (index + 1) % N;
     var text = document.getElementById("card-text");
-    text.innerText = q_a[i][0];
+    text.innerText = q_a[indexes[index]][0];
 
     var card = document.getElementById("card");
     card.classList.add("bg-info");
     card.classList.remove(["bg-warning"]);
+
 }
 
 next()
