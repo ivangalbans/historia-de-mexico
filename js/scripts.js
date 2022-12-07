@@ -1,5 +1,5 @@
-var q_a =
-    [
+var all_questions = {
+    "switchdMexicoPrehispanico": [
         ["Cuándo se construyeron las pirámides del sol y la luna ?", "Entre el año 0 y 200 d.C."],
         ["Cultura con más desarrollo en el posclásico 950 d.C. - 1521 d.C.", "Azteca/Mexica"],
         ["En qué etapa prehispánica se empezaron a construir los reinos ?", "Preclásica"],
@@ -78,9 +78,60 @@ var q_a =
         ["Tribu índígena de Durango", "Tepehuanes"],
         ["Tribu indígena de Coahuila", "Kikapú"],
         ["Comunidad indígena que habita actualmente en Tabasco", "Mayas-Chontales"]
-    ];
+    ],
+    "switchConquistaYColonia": [
+        ["Razones que promovieron el descubrimiento de América ?", "Descubrir nuevas rutas comerciales y expandir el régimen feudal"],
+        ["Por qué los conquistadores / españoles salieron de España", "Buscando riquezas"],
+        ["Nombre del conquistador que derrotó al imperio Mexica", "Hernán Cortés"],
+        ["Cuándo se fundó la Villa Rica de la Veracruz ?", "10 de julio de 1519"],
+        ["Quién fundó Villa Rica de la Veracruz", "Hernán Cortés"],
+        ["Qué es la Villa Rica de la Veracruz ?", "Hernán Cortés da ese nombre al primer ayuntamiento de América Continental, hoy ciudad de Veracruz"],
+        ["Quién era el emperador Mexica cuando llegaron los españoles ?", "Moctezuma Xocoyotzin"],
+        ["Cuándo entraron los conquistadores a Tenochtitlan", "8 de noviembre de 1519"],
+        ["Quién era la intérprete de Hernán Cortés", "La Malinche, Marina"],
+        ["Cómo se llamó la batalla donde los Aztecas derrotaron a los españoles ?", "La Noche Triste"],
+        ["Cuál es el nombre del árbol donde lloró Hernán Cortés el día de la Noche Triste", "Ahuehuete"],
+        ["Líder prehispánico que lideró la victoria durante la noche triste", "Cuitláhuac"],
+        ["Nombre del último emperador Mexica, a quien los conquistadores españoles torturaron quemándole los pies", "Cuauhtémoc"],
+        ["Por qué le quemaron los pies a Cuauhtémoc", "Para confesar que había hecho con el tesoro de Moctezuma"],
+        ["Cuáles fueron los 3 emperadores Mexicas", "Moctezuma, Cuitláhuac, Cuauhtémoc"],
+        ["Año en que cayó México Tenochtitlan", "1521"],
+        ["El palacio de Axayacatl es también conocido como", "Casas viejas"],
+        ["El periodo fundacional de la conquista fue", "1519 - 1610"],
+        ["Cuándo se consolida la étapa Colonial ?", "1530 - 1560"],
+        ["Nombre de México durante el periodo Colonial", "Nueva España"],
+        ["Quién era la máxima autoridad en la Nueva España ?", "El virrey"],
+        ["Primer Virrey de la Nueva España", "Antonio de Mendoza y Pacheco o Don Antonio de Mendoza"],
+        ["Segundo Virrey de Nueva España", "Luis de Velasco y Ruiz de Alarcón"],
+        ["Quién fue el último Virrey de la Nueva España", "Juan Ruiz de Apodaca"],
+        ["Cuáles fueron las leyes para el buen tratamiento y conservación de los indios ?", "Las Leyes Nuevas"],
+        ["Primera intendencia u oficialía de la Nueva España fundada en 1770", "Intendencia de Arizpe (hoy Sonora y Sinaloa)"],
+        ["Fue la primera provincia en ser explorada y fundada en el norte de México durante el virreinato de la Nueva España", "La Nueva Vizcaya"],
+        ["Estados actuales que conforman la Nueva Vizcaya en la época colonial", "Durango, Chihuahua y Sinaloa"],
+        ["Qué fue la Constitución de Cádiz", "La Constitución Política de la Monarquía Española, más conocida como Constitución española de 1812 o Constitución de Cádiz, conocida popularmente como la Pepa. Dividió la Nueva España en 6 provincias."],
+        ["El zócalo de la Ciudad de México también conocido como Plaza de la Constitución se llama así por la Constitución de", "Constitución de Cádiz de 1812"],
+        ["Quién hizo la ley de imprenta que sale en la Constitución de Cádiz", "José Isidro Morales"],
+        ["Creador de un periódico en la época de la Constitución de Cádiz", "José Isidro Morales"],
+        ["Cómo denominaban a los hijos de españoles nacidos en la Nueva España ?", "Criollos"],
+        ["Qué es un mestizo", "Hijo de español e indio"],
+        ["En la época colonial, A quienes se les llamaba peones ?", "A los trabajadores asalariados de las haciendas"],
+        ['La "Encomienda" y el "Visitador" fueron instituciones', "Coloniales"],
+        ["Qué es la encomienda", 'La encomienda en Nueva España fue introducida por Hernán Cortés después de la conquista de Tenochtitlán como forma de "repartir" los indios a distintos conquistadores y colonos.'],
+        ["Qué era la figura del Visitador ?", "Era un individuo investido de autoridad para supervisar y tomaba nota de todo lo que debía ser juzgado y corregido en lo político, económico y militar, mandado desde España por la Corona."],
+        ["El mineral que más se extraía en la Nueva España era", "La plata"],
+        ["El Palacio Nacional, sede del Poder Ejecutivo Federal, inicialmente fue construido como", "Segunda Casa de Hernán Cortés o Casas Nuevas"],
+        ["Esquema imperial por el cual se exigía el pago de los más ricos para contribuir al gobierno", "Unión de Armas"],
+        ["Año en que se creó la primera imprenta de México", "1539"],
+        ["Primer periódico de México o primer periódico impresno en la Nueva España", "La Gaceta de México"],
+        ["Nombre del periódico credo en el S. XVIII en la Nueva España", "La Gaceta de México"],
+        ["Institución creada para compensar las falencias del sistema judicial en la Nueva España", "Tribunal de la Acordada"],
+        ["Primera institución durante la colonia de educación superior para indígenas o escuela de los nobles indígenas en la época del Virreinato", "Colegio de la Santa Cruz de Santiago Tlatelolco"],
+        ["Nombre del sistema financiero donde se exigía a grandes consorcios contribuir al mantenimiento de la corono", "La Real Hacienda. Cajas de la Real Hacienda"],
+        ["En qué consitió la conspiración de Valladolid ?", "Pretendían establecer un congreso soberano que gobernaría a nombre de Fernando VII"],
+        ["El principal culto religioso de la sociedad novohispana que perdura en la actualidad", "La virgen de Guadalupe"]
+    ]
 
-var N = q_a.length;
+};
 
 function shuffle(array) {
     let i = array.length, j;
@@ -94,12 +145,12 @@ function shuffle(array) {
     return array;
 }
 
-var indexes = shuffle(Array.from(Array(N).keys()));
-var index = -1;
+var indexes, index = -1;
+var questions, N;
 
 function answer() {
     var text = document.getElementById("card-text");
-    text.innerText = q_a[indexes[index]][1];
+    text.innerText = questions[indexes[index]][1];
 
     var card = document.getElementById("card");
     card.classList.add("bg-warning");
@@ -109,7 +160,7 @@ function answer() {
 function previous() {
     index = (index - 1 + N) % N;
     var text = document.getElementById("card-text");
-    text.innerText = q_a[indexes[index]][0];
+    text.innerText = questions[indexes[index]][0];
 
     var card = document.getElementById("card");
     card.classList.add("bg-info");
@@ -120,7 +171,7 @@ function previous() {
 function next() {
     index = (index + 1) % N;
     var text = document.getElementById("card-text");
-    text.innerText = q_a[indexes[index]][0];
+    text.innerText = questions[indexes[index]][0];
 
     var card = document.getElementById("card");
     card.classList.add("bg-info");
@@ -128,4 +179,29 @@ function next() {
 
 }
 
-next()
+function toogle(switchId) {
+    var element = document.getElementById(switchId);
+    if (element.hasAttribute("checked")) {
+        element.removeAttribute("checked");
+    }
+    else {
+        const checkedAttr = document.createAttribute("checked");
+        element.setAttributeNode(checkedAttr);
+    }
+}
+
+function start() {
+
+    questions = Object.entries(all_questions)
+        .filter(([k]) => document.getElementById(k).hasAttribute("checked"))
+        .map(([k, v]) => v).flat();
+
+    N = questions.length;
+    indexes = shuffle(Array.from(Array(N).keys()));
+
+    // console.log(questions);
+
+    document.getElementById("box").classList.remove("d-none");
+
+    next();
+}
