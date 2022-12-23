@@ -215,6 +215,33 @@ var all_questions = {
         ['Quién dijo la frase "Por mi raza hablará el espíritu" ?', 'Jose Vanconcelos'],
         ['Quién dijo la frase "Yo no vengo a trabajar por la universidad, sino a pedir a la universidad que trabaje por el pueblo" ?', 'Jose Vasconcelos'],
         ['Qué presidente le dio autonomía a la UNAM ?', 'Emilio Portes Gil']
+    ],
+    "switchRevolucion": [
+        ['Fecha de la Revolución Mexicana', "20 de noviembre de 1910"],
+        ['Qué se celebra el 20 de noviembre ?', "Día de la Revolución Mexicana"],
+        ['Orden cronológico de los eventos', "Conquista, independencia y revolución"],
+        ['De qué se trató el plan de San Luis de Potosí', "Fue promulgado por Francisco I. Madero, para evitar la reelección de Porfirio Diaz y derrocar el porfiriato. Se buscaba lograr elecciones libres y democráticas"],
+        ['El lema "Sufragio efectivo, no reelección" fue la bandera política de', "Francisco I. Madero"],
+        ['Nombre del líder agrario qe encabezó la revolución mexicana en el estaod de Morelos', "Emiliano Zapata"],
+        ['Quién dijo "Tierra y libertad ?"', "Emiliano Zapata"],
+        ['Cuándo y dónde fue asesinado Emiliano Zapata ?', "En la hacienda Chinameca, Morelos, el 10 de abril de 1919"],
+        ['Acontecimiento relacionado con la industri minera y la revolución', "Huelga de Cananea"],
+        ['Composición musical característica de la época revolucionaria', "El Corrido"],
+        ['Nombre de un famoso corrido revolucionario', "La Adelita"],
+        ['"Las Adelitas" acompañaron a sus hombres al combate en', "La Revolución de 1910"],
+        ['De qué se trató el Plan de Ayala', 'Proclamado por Emiliano Zapata para desconocer el gobierno de Francisco I. Madero y devolver la propiedad a los campesinos. Su lema fue: "Reforma, Libertad, Justicia y Ley"'],
+        ['Quién fue el autor de la traición de Francisco I. Madero', "Victoriano Huerta"],
+        ['Nombre del golpe de estado ocurrido del 9 al 19 de febrero de 1913 o golpe militar para derrocar a Francisco I. Madero', "Decena Trágica"],
+        ['De qué se trato el Plan de Guadalupe ?', "Plan para desconocer el gobierno de Victoriano Huerta por la traición a Francisco I. Madero. Fue proclamado por Venustiano Carranza"],
+        ['Plan de Venustiano Carranza para derrocar a Victoriano Huerta', "Plan Guadalupe"],
+        ['Quién encabezaba el ejército constitucionalista durante la revolución', "Venustiano Carranza"],
+        ['Quién fue Pancho Villa', "Líder de la Revolución Mexicana"],
+        ['Nombre de Pancho Villa', "José Doroteo Arango Arámbula"],
+        ['A quién se le conoce como el Centauro del Norte', "Pancho Villa"],
+        ['Cuándo y dónde fue asesinado Pancho Villa', "20 de Julio de 1923 en Parral, Chihuahua"],
+        ['En que año se firmó la constitución que nos rige actualmente ?', "5 de Febrero de 1917 en Querétaro"],
+        ['Quién fue el primer secretario de educación pública de México (1921) ?', "José Vasconcelos"],
+        ['Quién fue el Secretario de educación pública y bellas artes de 1901 a 1911 ?', "Justo Sierra"]
     ]
 
 };
@@ -284,8 +311,6 @@ function start() {
 
     N = questions.length;
     indexes = shuffle(Array.from(Array(N).keys()));
-
-    // console.log(questions);
 
     document.getElementById("box").classList.remove("d-none");
 
