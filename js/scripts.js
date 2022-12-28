@@ -1,5 +1,5 @@
 var all_questions = {
-    "switchdMexicoPrehispanico": [
+    "switchMexicoPrehispanico": [
         ["Cuándo se construyeron las pirámides del sol y la luna ?", "Entre el año 0 y 200 d.C."],
         ["Cultura con más desarrollo en el posclásico 950 d.C. - 1521 d.C.", "Azteca/Mexica"],
         ["En qué etapa prehispánica se empezaron a construir los reinos ?", "Preclásica"],
@@ -379,6 +379,17 @@ var all_questions = {
         ['Dónde se encuentra la zona arqueológica de San Antonio Nogalar ?', 'Tamaulipas']
     ]
 };
+
+var labels = document.getElementsByTagName("label");
+var total = 0;
+for (item of labels) {
+    var n = all_questions[item.getAttribute("for")]?.length || 0;
+    total += n;
+    item.innerHTML += " (" + n + ")";
+}
+
+document.getElementById("n-total").innerText += " " + total;
+
 
 function shuffle(array) {
     let i = array.length, j;

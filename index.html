@@ -18,16 +18,16 @@
 
     <!-- Historia: México Prehispánico -->
     <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="switchdMexicoPrehispanico" checked
+      <input class="form-check-input" type="checkbox" role="switch" id="switchMexicoPrehispanico" checked
         oninput='toogle("switchdMexicoPrehispanico")'>
-      <label class="form-check-label" for="flexSwitchCheckChecked">Historia: México Prehispánico</label>
+      <label class="form-check-label" for="switchMexicoPrehispanico">Historia: México Prehispánico</label>
     </div>
 
     <!-- Historia: Conquista y Colonia -->
     <div class="form-check form-switch">
       <input class="form-check-input" type="checkbox" role="switch" id="switchConquistaYColonia" checked
         oninput='toogle("switchConquistaYColonia")'>
-      <label class="form-check-label" for="flexSwitchCheckChecked">Historia: Conquista y Colonia</label>
+      <label class="form-check-label" for="switchConquistaYColonia">Historia: Conquista y Colonia</label>
     </div>
 
     <!-- Historia: Independencia -->
@@ -98,6 +98,10 @@
       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled
         oninput='toogle("switchRevolucion")'>
       <label class="form-check-label" for="flexSwitchCheckDisabled">Civismo</label>
+    </div>
+
+    <div>
+      <p id="n-total" class="lead">Total:</p>
     </div>
 
     <button class="btn btn-primary" onclick="start()">Empezar</button>
