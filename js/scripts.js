@@ -377,13 +377,61 @@ var all_questions = {
         ['Dónde se encuentra la zona arqueológica de Chalchihuites o AltaVista ?', 'Zacatecas'],
         ['Dónde se encuentra la zona arquelógica de Villas de Reyes ?', 'San Luis Potosí'],
         ['Dónde se encuentra la zona arqueológica de San Antonio Nogalar ?', 'Tamaulipas']
+    ],
+    "switchGastronomia": [
+        ['Bebida típica de México', 'Tequila'],
+        ['Comida típica de México que está hecha a base de harina de maíz y se envuelve en hoja de plátano', 'Tamal'],
+        ['Qué son escamoles ?', 'Huevos de holmiga'],
+        ['Productos originarios de México', 'Chocolate, aguacate, tomate, pavo'],
+        ['Dulce típico de Xochimilco hecho de amaranto', 'Alegría'],
+        ['Cuál es el nombre del caldo mexicano elaborado con granos de maíz ?', 'Pozole'],
+        ['De dónde es originaria la ensalada de noche buena ?', 'Michoacán'],
+        ['Bebidas sacadas del agave', 'Tequila y mezcal'],
+        ['Platillos mexicanos a base de tortilla', 'Sopes, tlacoyos y memelas'],
+        ['Qué son memelas ?', 'Tortillas de maíz ovaladas (Puebla)'],
+        ['De dónde son originarios la sopa de lima, los panuchos y la cochinita pibil ?', 'Yucatán'],
+        ['Plato típico de Monterrey', 'El Cabrito'],
+        ['El cabrito y la machaca son platos originarios de', 'Nuevo León'],
+        ['Lugar donde son tradicionales los tamales de queso para el día de muertos', 'San Luis Potosí'],
+        ['De dónde es originario el Chile en Nogada', 'Puebla'],
+        ['Nombre de 3 platos típicos poblanos', 'Mole poblano, Chile en Nogada, Chalupas'],
+        ['Plato típico de Veracruz', 'Zacahuil'],
+        ['Qué insectos son comestibles ?', 'Chapulines (saltamontes), escamoles (huevos de hormiga), jumiles, gusanos de maguey'],
+        ['Bebida prehispánica conocida como curado', 'Pulque'],
+        ['Bebida sacada del maguey', 'Pulque'],
+        ['Cuál es el ingrediente principal del mole ?', 'Chocolate amargo'],
+        ['De dónde es el platillo de los 7 moles ?', 'Oaxaca'],
+        ['Qué es la guanábana', 'Fruta de cáscara verde y pulpa blanca'],
+        ['Postre típico a base de harina de trigo', 'Buñuelos'],
+        ['Postre típico de Guadalajara', 'Jericaya (Es similar al flan o crème brûlée)'],
+        ['Dulce típico de Guanajuato', 'Charamuscas'],
+        ['Dulce típico de Pachuca Hidalgo', 'Palanquetas (barras / turrón de cacahuate)'],
+        ['Qué es la cajeta ?', 'Dulce de leche quemada de cabra'],
+        ['De dónde es el queso menonita ?', 'Chihuahua'],
+        ['De dónde es típico el queso de tuna', 'San Luis Potosí']
+    ],
+    "switchGeografiaYPoblacion": [
+
+    ],
+    "switchLiteraturaYMusica": [
+
+    ],
+    "switchPinturaYCine": [
+
+    ],
+    "switchCienciaYDeporte": [
+
+    ],
+    "switchCivismo": [
+
     ]
 };
 
 var labels = document.getElementsByTagName("label");
 var total = 0;
 for (item of labels) {
-    var n = all_questions[item.getAttribute("for")]?.length || 0;
+    console.log(item.getAttribute("for"));
+    var n = all_questions[item.getAttribute("for")].length;
     total += n;
     item.innerHTML += " (" + n + ")";
 }
