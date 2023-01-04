@@ -467,7 +467,35 @@ var all_questions = {
         ['Cuál es la ciudad 4 veces heroica o 3 veces triunfante ?', 'Veracruz']
     ],
     "switchLiteraturaYMusica": [
-
+        ['El teatro de mayor prestigio en la Ciudad de México es', 'Palacio de Bellas Artes'],
+        ['Qué se inauguró durante el período presidencial de Abelardo Rodríguez Lujan ?', 'El Palacio de Bellas Artes'],
+        ['Nombre del antiguo teatro donde se construyó el Palacio de Bellas Artes', 'Teatro Nacional'],
+        ['Dónde se ubica el Teatro Juarez ?', 'Guanajuato'],
+        ['Cómo se llama el premio que entrega el Instituto Nacional de Bellas Artes ?', 'Premio Bellas Artes'],
+        ['Cómo se llama el premio que entrega Bellas Artes de cuento o literario', 'Amparo Dávila'],
+        ['Ganadores del premio Amparo Dávila', 'Damián Alcázar, Ana Ofelia Gurría, Mario Rojo'],
+        ['Qué fue Juan Rulfo ?', 'Escritor'],
+        ['Quién escribió "El llano en llamas"', 'Juan Rulfo'],
+        ['Qué obra escribió Carlos Fuentes sobre la vida mexicana en 1958 ?', 'La región más transparente'],
+        ['"La muerte de Artemio Cruz" es una novela de', 'Carlo Fuentes'],
+        ['Quién escribió "Los Cinco Soles de México" ?', 'Carlos Fuentes'],
+        ['Quién escribió "Aura" ?', 'Carlos Fuentes'],
+        ['Quién escribió "La Noche de Tlatelolco" ?', 'Elena Poniatowska'],
+        ['Quién escribió "Las Voces de Tlatelolco" ?', 'José Emilio Pacheco'],
+        ['Quién escribió "Relámpagos de Agosto" ?', 'Jorge Ibargüengoitia'],
+        ['Temporada de zopilotes: Una historia narrativa de la Decena Trágica, Quién es su autor ?', 'Paco Ignacio Taibo II'],
+        ['De qué trató Temporada de Zopilotes ?', 'De la Decena Trágica'],
+        ['Escribió sobre Francisco I. Madero', 'Paco Ignacio Taibo II'],
+        ['Libro escrito por Francisco I. Madero', 'La Sucesión Presidencial'],
+        ['Por qué es conocida Sor Juana Inés de la Cruz ?', 'Escritora más importante del período Novo-hispano'],
+        ['Quién dijo la frase "Hombres necios que acusáis a la mujer sin razón, sin ver que vos sois la ocasión de lo mismo que culpáis" ?', 'Sor Juana Inés de la Cruz'],
+        ['Poema que escribió Bernardo Balbuena sobre Nueva España en 1604', 'La Grandeza Mexicana'],
+        ['Exponente de la literatura revolucionaria / Escritor muy importante de la revolución', 'Mariano Azuela'],
+        ['Qué género escribían los siguientes autores: Juan Rulfo, Mario Bellatin y Jorge Volpi ?', 'Narrativa, novela'],
+        ['Famoso escritor mexicano de música para niños', 'Francisco Gabilondo Soler, alias Cri Cri'],
+        ['Quién escribió "El ratón vaquero" ?', 'Cri Cri (Francisco Gabilondo Soler)'],
+        ['Cuál es el nombre de Juan Gabriel (El Divo de Juárez) ?', 'Alberto Aguilera Valadez'],
+        ['El alpa es un instrumento musical de', 'Veracruz']
     ],
     "switchPinturaYCine": [
 
