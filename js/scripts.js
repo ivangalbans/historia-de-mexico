@@ -521,7 +521,7 @@ var all_questions = {
         ['Cómo se llamaba la actriz extranjera de la época dorada del cine mexicano ?', 'Libertad Lamarque'],
         ['Actrices mexicanas de la época dorada del cine mexicano', 'María Félix, Sara Garcia, Dolores del Río'],
         ['María Félix y Dolores del Río fueron personajes destacados en el ámbito de', 'El cine'],
-        ['Cuál es la atriz mexicana que actuaba siempre de abuelita ?', 'Sara (Sarita) García'],
+        ['Cuál es la actriz mexicana que actuaba siempre de abuelita ?', 'Sara (Sarita) García'],
         ['Quién fue Jorge Negrete ?', 'Un actor y cantante'],
         ['Nombre completo de Jorge Negrete', 'Jorge Alberto Negrete Moreno'],
         ['Figura del cine nacional que encarnó al charro mexicano', 'Jorge Negrete'],
