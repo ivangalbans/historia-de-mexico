@@ -536,7 +536,27 @@ var all_questions = {
         ['Máximo galardón de la academia mexicana de cinematografía', 'Premio Ariel']
     ],
     "switchCienciaYDeporte": [
-
+        ['Quién inventó la TV a color ?', 'Guillermo González Camarena'],
+        ['Quién inventó la pastilla anticonceptiva ?', 'Luis Ernesto Miramontes Cárdenas el 15 de octubre de 1951'],
+        ['Mexicano que ganó el Premio Nobel de Química por sus investigaciones sobre la capa de ozono', 'José Mario Molina Pasquel y Henríquez en 1995'],
+        ['Nombre del primer astronauta mexicano', 'Rodolfo Neri Vela'],
+        ['Astronauta mexicano que participó en la misión STS-61-B del Transbordador Espacial Atlantis', 'Rodolfo Neri Vela'],
+        ['Quién fue la primera mujer médico en México ?', 'Matilde Montoya en 1887'],
+        ['Quién fue Luis Barragán', 'Ingeniero y arquitecto mexicano, autor de las Torres de Satélite'],
+        ['Mexicano que ganó el premio Pritzker (Comúnmente llamado Nobel de la arquitectura) en 1980', 'Luis Barragán'],
+        ['Mexicanos ganadores del Premio Nobel', 'Alfonso García Robles, Octavio Paz y José Mario Molina Pasquel y Henríquez'],
+        ['Cuál fue decretado deporte nacional en 1933', 'La charrería'],
+        ['Nombre de famosos boxeadores mexicanos', 'Julio César Chávez, Saúl "El Canelo" Álvarez y Rubén "El Púas" Olivares'],
+        ['Apodo de la boxeadora mexicana actualmente considerada como la campeona mundial en la categoría de peso supermosca del Consejo Mundial de Boxeo (CMB)', 'La guerrera, Ana María Torres Ramírez'],
+        ['Apodo de la boxeadora mexicana reconocida como la mejor boxeadora del año por la Federación Internacional de Boxeo (FIB)', 'La rusita, Yasmín Rivas Hernández'],
+        ['Lugar y fecha en la que México fue sede de los juegos olímpicos', 'Ciudad de México, 12 de Octubre de 1968'],
+        ['En qué años fue México sede de la Copa Mundial de Fútbol ?', '1970 y 1986'],
+        ['Cuál es el apodo del futbolista mexicano Javier Hernández ?', 'Chicharito'],
+        ['Nombres de futbolistas mexicanos famosos en España', 'Hugo Sánchez Márquez y Rafa Márquez Álvarez'],
+        ['Cuál es el nombre del futbolista mexicano que se destacó en Europa en los 90 ?', 'Hugo Sánchez Márquez'],
+        ['Quién ganó la medalla de oro en las olimpiadas del año 2000 en Sydney por halterofilia (levantamiento de pesas) ?', 'Soraya Jiménez Mendivil'],
+        ['Cuál es el récord de la carrera que ganó Ana Gabriela Espinoza en 2003 ?', '300 metros planos en 35.30 segundos'],
+        ['Récord de la carrera en que Ana Gabriela Guevara fue medallista de las Olimpiadas de Atenas en 2004', 'Medalla de plata en 400m planos en 48.89 seg']
     ],
     "switchCivismo": [
 
