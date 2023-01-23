@@ -676,6 +676,14 @@ var all_questions = {
         ['Cuándo fue creado el Himno Nacional ?', '13 de Septiembre de 1854'],
         ['A qué entidad representan los diputados del Congreso de la Unión', 'A los distritos electorales'],
         ['A quién representan los senadores ?', 'A las entidades federativas']
+    ],
+    "switchBilletes": [
+        ['Billete de 20 pesos', 'Anverso: entrada del Éjercito de las Tres Garantías a la CDMX.\nReverso: Cocodrilo mexicano y la garza chocolatera en la Reserva de la Biosfera Sian Ka\'an.\nAntes: Efigie de Benito Juárez'],
+        ['Billete de 50 pesos', 'Anverso: Teocalli de la Guerra Sagrada, representa el período histórico del México Antiguo que muestra un águila posada sobre un nopal con la serpiente en el pico.\nReverso: El ecosistema de ríos y lagos con el ajolote y el maíz en Xochimilco.\nAntes: Rostro de José María Morelos y Pavón'],
+        ['Billete de 100 pesos', 'Anverso: Sor Juana Inés de la Cruz.\nReverso: La reserva de la Biosfera Mariposa Monarca.\nAntes: Efigie de Nezahualcótotl'],
+        ['Billete de 200 pesos', 'Anverso: Miguel Hidalgo y Costilla, José María Morelos y Pavón.\nReverso: Ecosistema de matorrales y desiertos a través del águila real en la reserva de la Biosfera del Picana en Sonora.\nAntes: Efigie de Sor Juana Inés de la Cruz y templo de San Jerónimo'],
+        ['Billete de 500 pesos', 'Anverso: Benito Juárez.\nReverso: Ecosistema de costas, mares e islas a través de una ballena gris con su ballenato en la reserva de la Biosfera el Vizcaino en Baja California Sur.\nAntes: Efigie de Ingacio Saragoza'],
+        ['Billete de 1000 pesos', 'Anverso: Francisco I. Madero, Hermila Galindo y Carmen Serdán.\nReverso: El jaguar, los árboles de la ceiba y el zapote en la antigua ciudad maya y bosques tropicales protegidos de Calakmul en Campeche.\nAntes: Rostro de Miguel Hidalgo']
     ]
 };
 
@@ -702,7 +710,7 @@ function shuffle(array) {
     return array;
 }
 
-var indexes, index = -1;
+var indexes, index;
 var questions, N;
 
 function answer() {
@@ -753,6 +761,7 @@ function toogle(switchId) {
 
 function start() {
 
+    index = -1;
     questions = Object.entries(all_questions)
         .filter(([k]) => document.getElementById(k).hasAttribute("checked"))
         .map(([k, v]) => v).flat();
