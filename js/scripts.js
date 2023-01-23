@@ -72,7 +72,7 @@ var all_questions = {
         ["Qué significa Cuauhtémoc", "Aguila que desciende, o águila que se posa"],
         ["Significado de la palabra altepetl con la que los tlatoanis denominaban a sus ciudades", "Cerro de agua"],
         ["Quiénes integraron la triple alianza", "Tenochtitlan, Tetzcoco, Tlacopan"],
-        ["Etnia de Guanajato", "Chichimeca Jonaz"],
+        ["Etnia de Guanajuato", "Chichimeca Jonaz"],
         ["Cultura indígena que persiste en el norte del país", "Tarahumara"],
         ["De qué parte del país son los Tarahumaras", "Chihuahua"],
         ["Tribu indígena de Durango", "Tepehuanes"],
@@ -132,8 +132,8 @@ var all_questions = {
     ],
     "switchIndependencia": [
         ["La independencia de México inició en", "1810"],
-        ["En qué estado fue el grito de Independencia ?", "Dolores Hidalgo - Guanajato"],
-        ["Dónde fue la cuna de la independencia ?", "Guanajato"],
+        ["En qué estado fue el grito de Independencia ?", "Dolores Hidalgo - Guanajuato"],
+        ["Dónde fue la cuna de la independencia ?", "Guanajuato"],
         ['A quién se conoce como "El Padre de la Patria"', "Miguel Hidalgo y Costilla"],
         ['Quién dijo la frase "El Indulto es para los criminales, no para los defensores de la patria" ?', "Miguel Hidalgo y Costilla"],
         ["Imagen presente en el estandarte de Hidalgo (Blasón de Hidalgo)", "La Virgen de Guadalupe"],
@@ -724,6 +724,8 @@ function previous() {
     card.classList.add("bg-info");
     card.classList.remove("bg-warning");
 
+
+    document.getElementById("n-question").innerText = "Respondidas: " + index;
 }
 
 function next() {
@@ -734,6 +736,8 @@ function next() {
     var card = document.getElementById("card");
     card.classList.add("bg-info");
     card.classList.remove(["bg-warning"]);
+
+    document.getElementById("n-question").innerText = "Respondidas: " + index;
 
 }
 
@@ -758,6 +762,7 @@ function start() {
     indexes = shuffle(Array.from(Array(N).keys()));
 
     document.getElementById("box").classList.remove("d-none");
+    document.getElementById("answered").classList.remove("d-none");
 
     next();
 }
