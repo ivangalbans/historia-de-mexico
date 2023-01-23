@@ -682,7 +682,6 @@ var all_questions = {
 var labels = document.getElementsByTagName("label");
 var total = 0;
 for (item of labels) {
-    console.log(item.getAttribute("for"));
     var n = all_questions[item.getAttribute("for")].length;
     total += n;
     item.innerHTML += " (" + n + ")";
