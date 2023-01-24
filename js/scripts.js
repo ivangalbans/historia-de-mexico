@@ -244,7 +244,7 @@ var all_questions = {
         ['Quién fue el Secretario de educación pública y bellas artes de 1901 a 1911 ?', "Justo Sierra"]
     ],
     "switchMexicoContemporaneo": [
-        ['Quién es el primera mujer mexicana en viajar al espacio ?', 'Katya Echazarreta'],
+        ['Quién es la primera mujer mexicana en viajar al espacio ?', 'Katya Echazarreta'],
         ['Cuál de las siguientes siglas corresponden a un instituto de salud ?', 'IMSS'],
         ['Qué productos exporta México ?', 'Aceite crudo de petróleo, autopartes y productos de cobre'],
         ['Qué lugar ocupa México en la economía mundial ?', '16'],
